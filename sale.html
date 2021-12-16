@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head></head><br><br><br><br><br>
+
+<body background="sale.jpg">
+  <link rel="stylesheet" type="text/css" href="sale.css">
+  
+  <script type="text/javascript" src="sale.js"></script>
+<center>
+<div class ="form">
+		<h2><font color="yellow"> Sales Tax Calculator</font></h5>
+		<form name="orderform" id="orderform">
+		<table>
+</div>
+  <tr><th>
+   <label><font color="black">Product: </font></label>
+  </th>
+  <th scope="row">
+   <div align="left">
+    <label><span>$</span></label>
+    <input name="price" type="text" id="price" size="10">
+   </div>
+  </th>
+
+  
+  <tr><th>
+   <label><font color="black">Quantity</label>
+  </th>
+  <th scope="row">
+   <div align="left">
+    <label><span>#</span></label>
+    <input name="quantity" type="text" id="quantity" size="10">
+   </div>
+  </th>
+ 
+  <tr><th>
+   <label><font color="black">Subtotal:</label>
+  </th>
+  <th scope="row">   
+   <div align="left">
+    <label>$</label>
+    <input name="subtotal" type="text" id="subtotal" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;
+    <input name="subBtn" onClick="subTotal();" type="button" id="subBtn" value="Subtotal">
+   </div>
+  </th>
+ </tr>
+  
+   <tr><th>
+   <label><font color="red">Tax:</label>
+  </th>
+   <th scope="row">
+   <div align="left">
+    <label>$</label>
+     <input name="salestax" type="text" id="salestax" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;               
+     <input name="taxBtn" onClick="calculateTax();" type="button" id="taxBtn" value="Tax">  
+   </div>
+  </th>
+ </tr>
+ 
+  <tr><th>
+   <label><font color="yellow">Total:</label>
+  </th>
+  <th scope="row">
+   <div align="left">
+    <label>$</label>
+    <input name="gtotal" type="text" id="gtotal" onFocus="this.form.elements[2].focus()" size="10"> &nbsp;&nbsp;
+    <input name="gtotalBtn" onClick="grandTotal();" type="button" id="gtotalBtn" value="Calculate Order">
+   </div>
+  </th>
+ </tr>
+</table>
+</form>      
+</div>
+</center>
